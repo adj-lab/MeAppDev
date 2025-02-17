@@ -26,7 +26,7 @@
 
 ## ER 図
 
-<!-- 画像添付 -->
+[画像添付](https://github.com/adj-lab/MeAppDev/blob/55b2b47d1d88eae546880344f0dab6fde2d31f83/er_meapp_dev_r001.png)
 
 ## URL
 
