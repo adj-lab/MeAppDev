@@ -3,9 +3,6 @@
 <div class="all-contents">
     <div class="header-contents">
 
-        <input type="text" name="keyword" class="keyword" placeholder="商品名で検索">
-        <button type="submit" class="submit-button">検索</button>
-
     </div>
 
     <div class="top-contents">
@@ -16,7 +13,7 @@
 
     <div class="center-contents">
         @csrf
-        <input type="text" name="keyword" class="keyword" placeholder="商品名で検索">
+        <input type="text" name="keyword" class="keyword" placeholder="">
         <button type="submit" class="submit-button">検索</button>
 
         <!-- Livewire のモーダル -->
@@ -29,3 +26,5 @@
     </div>
 </div>
 @endsection
+
+<!-- ページネーション -->

@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="">
-    <h1>PiGly</h1>
+    <h1>Pigly</h1>
 </div>
 <div class="">
     <h2>新規会員登録</h2>
@@ -22,9 +22,17 @@
 
     <dl class="form-list">
         <dt>現在の体重</dt>
-        <dd><input type="text" name="now_weight" class="now-weight-form" placeholder="現在の体重を入力"></dd>
+        <dd><input type="text" name="weight" class="now-weight-form" placeholder="現在の体重を入力"></dd>
+            @error('weight')
+                <p class="error-message">{{ $message }}</p>
+            @enderror
+
         <dt>目標の体重</dt>
         <dd><input type="text" name="target_weight" class="target-weight-form" placeholder="現在の体重を入力"></dd>
+            @error('target_weight')
+                <p class="error-message">{{ $message }}</p>
+            @enderror
+
     </dl>
     <div>
         <button type="submit">アカウント作成</button>

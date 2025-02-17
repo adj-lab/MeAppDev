@@ -19,7 +19,7 @@
         </div>
 
     <div class="container">
-        @yield('content') {{-- ここに各ページのコンテンツが入る --}}
+        @yield('content') {{-- 各ページのコンテンツが入る --}}
     </div>
 
     @livewireScripts {{-- Livewire を使用する場合、必須 --}}

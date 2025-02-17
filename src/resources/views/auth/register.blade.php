@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="">
-    <h1>PiGly</h1>
+    <h1>Pigly</h1>
 </div>
 <div class="">
     <h2>新規会員登録</h2>

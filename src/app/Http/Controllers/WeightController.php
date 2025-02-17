@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
 
+use App\Http\Requests\RegisterWeightRequest;
 use App\Http\Requests\WeightTargetRequest;
 use App\Models\WeightTarget;
 use App\Models\User;
@@ -14,7 +15,7 @@ use App\Models\User;
 class WeightController extends Controller
 {
     //新規登録Step2：初期体重登録処理
-    public function update(): RedirectResponse
+    public function update($RegisterWeightRequest): RedirectResponse
     {
         //ログイン中ユーザー情報取得
         $user = Auth::user();
@@ -22,11 +23,14 @@ class WeightController extends Controller
         //体重情報登録処理
         WeightLog::create([
             'user_id' => $user->id,
-            '' => $request-> ,
-            '' => $request-> 
+            //現在の体重
+            'weight' => $request->weight,
+            //目標の体重
+            'target_weight' => $request->target_weight
         ]);
 
-
+        //体重管理画面へリダイレクト
+        return redirect()->route('weight.management')->with('success', '体重情報を登録しました');
     }
 
     //体重管理画面（トップ画面）
