@@ -4,7 +4,7 @@
 
 ### Docker ビルド
 
-- 1.git clone git@github.com:adj-lab/MeAppDev.git
+- 1.git clone -b feature/MeAppDev_r002 --single-branch git@github.com:adj-lab/MeAppDev.git
 - 2.docker-compose up -d --build
 - MySQL は、作業端末で.evn を作成し任意の変数を用意
 
